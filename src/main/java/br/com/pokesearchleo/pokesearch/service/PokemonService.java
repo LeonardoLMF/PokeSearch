@@ -8,8 +8,8 @@ public class PokemonService {
 
     private final RestTemplate restTemplate;
 
-    public PokemonService(RestTemplate restTemplate){
-        this.restTemplate = restTemplate;
+    public PokemonService() {
+        this.restTemplate = new RestTemplate();
     }
 
     public String getPokemon(String name){
